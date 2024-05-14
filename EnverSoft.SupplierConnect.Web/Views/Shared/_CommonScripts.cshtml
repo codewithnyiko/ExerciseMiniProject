@@ -1,0 +1,11 @@
+﻿<!-- _CommonScripts.cshtml -->
+
+<script>
+    $(function () {
+        // Ensure that a value does not start with an empty space
+        $('form input').on('keypress', function (e) {
+            if (e.which == 32 && e.currentTarget.value.trim() === "")
+                return false;
+        });
+    });
+</script>

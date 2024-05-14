@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnverSoft.SupplierConnect.Services", "EnverSoft.SupplierConnect.Services\EnverSoft.SupplierConnect.Services.csproj", "{D3A8CF13-5DF0-42EC-832F-ED58D54D1268}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnverSoft.SupplierConnect.Data", "EnverSoft.SupplierConnect.Data\EnverSoft.SupplierConnect.Data.csproj", "{0701A8F0-19CB-4802-8CA8-643BC920396B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnverSoft.SupplierConnect.Domain", "EnverSoft.SupplierConnect.Domain\EnverSoft.SupplierConnect.Domain.csproj", "{CF6E5275-EB41-4C1A-8520-E49C3C35750A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnverSoft.SupplierConnect.Web", "EnverSoft.SupplierConnect.Web\EnverSoft.SupplierConnect.Web.csproj", "{09B7AF6C-3842-4F72-ADBA-33C223BFE99C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnverSoft.SupplierConnect.MappingProfiles", "EnverSoft.SupplierConnect.MappingProfiles\EnverSoft.SupplierConnect.MappingProfiles.csproj", "{EC0C8E21-100B-48F6-BAA0-784AC68D0709}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3A8CF13-5DF0-42EC-832F-ED58D54D1268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A8CF13-5DF0-42EC-832F-ED58D54D1268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A8CF13-5DF0-42EC-832F-ED58D54D1268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A8CF13-5DF0-42EC-832F-ED58D54D1268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0701A8F0-19CB-4802-8CA8-643BC920396B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0701A8F0-19CB-4802-8CA8-643BC920396B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0701A8F0-19CB-4802-8CA8-643BC920396B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0701A8F0-19CB-4802-8CA8-643BC920396B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF6E5275-EB41-4C1A-8520-E49C3C35750A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF6E5275-EB41-4C1A-8520-E49C3C35750A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF6E5275-EB41-4C1A-8520-E49C3C35750A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF6E5275-EB41-4C1A-8520-E49C3C35750A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09B7AF6C-3842-4F72-ADBA-33C223BFE99C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09B7AF6C-3842-4F72-ADBA-33C223BFE99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09B7AF6C-3842-4F72-ADBA-33C223BFE99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09B7AF6C-3842-4F72-ADBA-33C223BFE99C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC0C8E21-100B-48F6-BAA0-784AC68D0709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0C8E21-100B-48F6-BAA0-784AC68D0709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0C8E21-100B-48F6-BAA0-784AC68D0709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0C8E21-100B-48F6-BAA0-784AC68D0709}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C00CDF1-5B20-475A-B4F8-2CF1D43A406E}
+	EndGlobalSection
+EndGlobal

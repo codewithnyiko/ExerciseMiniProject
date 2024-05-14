@@ -1,0 +1,100 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@model IPagedList<EnverSoft.SupplierConnect.Domain.ViewModels.SupplierViewModel>
+
+<section class="content">
+    
+    <div class="row">
+        
+        <div class="col-md-3" style="padding-left:40px;">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title"><strong>Suppliers Overview</strong></h3>
+
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-body">
+
+                    <div class="info-box">
+                        <span class="info-box-icon bg-success elevation-1"><i class="fas fa fa-users"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Total Suppliers</span>
+                            <span class="info-box-number">@Model.TotalItemCount</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-8">
+            <div class="card card-primary card-outline">
+                <div class="card-header">
+                    <h3 class="card-title" style="text-align:center;"><strong>List of suppliers</strong></h3>
+                    <div class="card-tools">
+
+                        <div class="input-group input-group-sm">
+                            <a asp-action="Create" class="btn btn-primary" style="margin-right: 15px;" title="Add Supplier">
+                                <i class="fas fa-plus-square"></i>
+                            </a>
+                            <form asp-action="Index" method="get">
+                                <div class="input-group-append">
+                                    <input type="text" style="margin-right: 1px;width: 230px;" class="form-control" name="searchString" placeholder="Search By Company Name">
+                                    <button class="btn btn-primary" type="submit" title="Search">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table" style="table-layout:fixed">
+                            <thead>
+                                <tr>
+                                    <th>Company Name</th>
+                                    <th>Telephone Number</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.ToList().Count == 0)
+                                {
+                                    <tr><td colspan="10"><p>No suppliers have been found , click on the add button to start capturing or change your filter.</p></td></tr>
+                                }
+
+                                @foreach (var supplier in Model)
+                                {
+                                    <tr>
+                                        <td>@supplier.Name</td>
+                                        <td>@supplier.TelephoneNo</td>
+                                        <td><a asp-action="Edit" asp-route-id="@supplier.Code" class="btn btn-sm btn-info">Edit</a></td>
+                                    </tr>
+
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer clearfix">
+                    <div class="float-right">
+                        @Html.PagedListPager(Model, pageNumber => Url.Action("Index", new { pageNumber }))
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

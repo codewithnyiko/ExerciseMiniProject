@@ -1,0 +1,51 @@
+﻿@model EnverSoft.SupplierConnect.Domain.ViewModels.SupplierCreateEditViewModel
+
+<section class="content">
+
+    <div class="row">
+        <div class="col-md-7">
+            <div class="card card-primary card-outline">
+                <div class="card-header">
+                    <h3 class="card-title"><strong>Edit Supplier (@Model.Name) </strong></h3>
+                </div>
+                <div class="card-body p-0">
+                    <form id="suppliereditform" asp-action="Edit">
+                        <div class="card-body">
+
+                            <input type="hidden" asp-for="Code" />
+                            
+                            <div class="form-group">
+                                <label asp-for="@Model.Code" class="control-label"></label>
+                                <input asp-for="@Model.Code" readonly="@(true)" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+
+                                <label asp-for="@Model.Name" class="control-label"></label>
+                                <input asp-for="@Model.Name" class="form-control" />
+                                <span asp-validation-for="@Model.Name" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="@Model.TelephoneNo" class="control-label"></label>
+                                <input asp-for="@Model.TelephoneNo" class="form-control" />
+                                <span asp-validation-for="@Model.TelephoneNo" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" value="Update" class="btn btn-primary" />
+                            </div>
+                            <a asp-action="index">Return back to list of suppliers</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+@section commonScripts
+{
+    <partial name="_CommonScripts" />
+}
